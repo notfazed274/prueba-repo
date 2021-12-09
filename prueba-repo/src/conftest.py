@@ -4,10 +4,6 @@ from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-def pytest_html_report_title(report):
-    report.title = "REPORTE EN HTML"
-
-
 def pytest_addoption(parser):
     parser.addoption('--browser', action='store',default='chrome',
                      help ='setup browser: Chrome')
